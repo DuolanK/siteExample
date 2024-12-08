@@ -98,6 +98,47 @@ section{
 }
 
 
+.popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 50, 50, 0.623);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content{
+    background-color: #fff;
+    padding: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    position: relative;
+
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 15px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup-text {
+    white-space: pre-wrap;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+
 @media (max-width: 768px) {
 
     section{
